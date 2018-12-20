@@ -15,6 +15,13 @@ pipeline {
             steps {
                 bat 'mvn test'
             }
+        stage('perf') {
+  steps { 
+   bat 'mvn gatling:test site'
+    
+      gatlingArchive()
+    }
+}     
             
         }
    
