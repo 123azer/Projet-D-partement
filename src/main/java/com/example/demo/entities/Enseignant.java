@@ -175,12 +175,18 @@ public class Enseignant implements Serializable  {
 	public void setPwd(String pwd) {
 		this.pwd = pwd;
 	}
+	
 	public List<Demande> getDemandes() {
 		return demandes;
 	}
 	public void setDemandes(List<Demande> demandes) {
 		this.demandes = demandes;
 	}
+
+	
+	
+
+	
 		
 }
 	

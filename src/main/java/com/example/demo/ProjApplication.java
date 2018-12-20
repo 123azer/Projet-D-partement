@@ -11,6 +11,7 @@ import org.springframework.context.ApplicationContext;
 
 import com.example.demo.dao.ArticleRepository;
 import com.example.demo.dao.CatArticleRepositroy;
+
 import com.example.demo.dao.DemandeRepository;
 import com.example.demo.dao.EnseignantRepository;
 import com.example.demo.dao.ServiceRepository;
@@ -18,6 +19,7 @@ import com.example.demo.dao.TypeServiceRepository;
 import com.example.demo.entities.Article;
 import com.example.demo.entities.CatArticle;
 import com.example.demo.entities.ChefDept;
+
 import com.example.demo.entities.DemandeM;
 import com.example.demo.entities.DemandeS;
 //import com.example.demo.entities.Demande;
@@ -102,5 +104,9 @@ public class ProjApplication {
    ArticleRepository mArticleRepository = ctx.getBean(ArticleRepository.class);
    Article A= dm1.add(catArticl1,"Stylo",EtatP.Validated,5,"C'est urgent");
    mArticleRepository.save(A);
+   // test mock
+   
 	}
+	
+	
 }
