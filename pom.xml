@@ -85,7 +85,11 @@
 		</plugins>
 		<pluginManagement>
       <plugins>
-	      
+     <plugin>
+       <groupId> org.sonarsource.scanner.maven </ groupId>
+       <artefactId> sonar-maven-plugin </ artefactId>
+       <version> 3.5.0.1254 </ version>
+     </ version plugin> 
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
